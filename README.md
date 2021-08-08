@@ -1,23 +1,84 @@
-https://data.gouv.nc/explore/dataset/entreprises-actives-au-ridet/
+![Docker Pulls](https://img.shields.io/docker/pulls/rastadidi/ridetnc-api)
 
-https://help.opendatasoft.com/apis/ods-search-v1/#dataset-search-api
+# About
 
-https://avisridet.isee.nc/
+`ridetapi-nc` is an API that wrapps an easy to use set of endpoints on top of
+[New Caledonia Open Data Dataset)(https://data.gouv.nc/explore/dataset/entreprises-actives-au-ridet/).
 
+The aim of this API is to make things easier than ever to get that datas.
 
-http://localhost:8080/ridets?q=sport&page=1
+# Related stuff
 
-doc swagger http://localhost:8080
+- [New Caledonia Open Data Dataset)(https://data.gouv.nc/explore/dataset/entreprises-actives-au-ridet/)
+- [Open Data Soft documentation](https://help.opendatasoft.com/apis/ods-search-v1/#dataset-search-api)
+- [Online Isee?nc form](https://avisridet.isee.nc/)
 
-http://localhost:8080/ridet/0426049
+# Run API by yourself
 
-Push to DockerHub
-Write DEV.to demo Post
-Post to contribs on OpenData Gouv.nc
+## Maven
 
-release with jreleaser
-publish doc with Slate
+```
+mvn spring-boot:run
+```
 
+## Docker
 
+```
+sudo docker run -d --name ridets-nc -p 8080:8080 rastadidi/ridetnc-api:latest
+sudo docker ps
+```
 
+# Usage
 
+- Swagger : http://localhost:8080/ridets?q=sport&page=1
+- Get a given ridet : `http://localhost:8080/ridet/0426049`
+- Searh ridets : http://localhost:8080/ridets?q=sport&page=1
+
+## Call examples
+
+Get infos about the **unique** society that has ridet `0426049` :
+
+```
+http :8080/ridet/0426049
+```
+
+Check if a society does exist (will return ` "status": 404`)
+
+```
+http :8080/ridet/04260499
+```
+
+Get a list of societies and search with a matching keyword (send back society where at least one field
+contains the query). Get the first page :
+
+```
+http :8080/ridets?q=sport&page=1
+```
+
+# Developers section
+
+## jib build
+
+In your `~/.m2/settings.xml` put your Docker hub
+
+```xml
+<server>
+    <id>registry.hub.docker.com</id>
+    <username>rastadidi</username>
+    <password>XXXXXXX</password>
+</server>
+```
+
+Then build/push to DockerHub :
+
+```
+mvn compile jib:build
+```
+
+## TODO
+
+- [ ] Push to DockerHub
+- [ ] Write DEV.to demo Post
+- [ ] Post to contribs on OpenData Gouv.nc
+- [ ] Release with jreleaser
+- [ ] Publish doc with Slate
