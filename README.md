@@ -1,4 +1,5 @@
 ![Docker Pulls](https://img.shields.io/docker/pulls/rastadidi/ridetnc-api)
+![Docker Stars](https://img.shields.io/docker/stars/rastadidi/ridetnc-api)
 
 # :grey_question:About
 
