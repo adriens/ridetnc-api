@@ -3,7 +3,7 @@
 # About
 
 `ridetapi-nc` is an API that wrapps an easy to use set of endpoints on top of
-[New Caledonia Open Data Dataset)(https://data.gouv.nc/explore/dataset/entreprises-actives-au-ridet/).
+[New Caledonia Open Data Dataset](https://data.gouv.nc/explore/dataset/entreprises-actives-au-ridet/).
 
 The aim of this API is to make things easier than ever to get that datas.
 
