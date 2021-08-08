@@ -9,7 +9,7 @@ The aim of this API is to make things easier than ever to get that datas.
 
 # Related stuff
 
-- [New Caledonia Open Data Dataset)(https://data.gouv.nc/explore/dataset/entreprises-actives-au-ridet/)
+- [New Caledonia Open Data Dataset](https://data.gouv.nc/explore/dataset/entreprises-actives-au-ridet/)
 - [Open Data Soft documentation](https://help.opendatasoft.com/apis/ods-search-v1/#dataset-search-api)
 - [Online Isee?nc form](https://avisridet.isee.nc/)
 
