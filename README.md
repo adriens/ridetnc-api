@@ -1,13 +1,13 @@
 ![Docker Pulls](https://img.shields.io/docker/pulls/rastadidi/ridetnc-api)
 
-# About
+# :grey_question:About
 
 `ridetapi-nc` is an API that wrapps an easy to use set of endpoints on top of
 [New Caledonia Open Data Dataset](https://data.gouv.nc/explore/dataset/entreprises-actives-au-ridet/).
 
 The aim of this API is to make things easier than ever to get that datas.
 
-# Katacoda Playground
+# :joystick:Katacoda Playground
 
 You can give a try to this API thanks to this [dedicated KataCoda scenario](https://www.katacoda.com/rastadidi/courses/open-data/ridet-nc).
 
@@ -25,7 +25,7 @@ You can give a try to this API thanks to this [dedicated KataCoda scenario](http
 mvn spring-boot:run
 ```
 
-## Docker
+## :whale:Docker
 
 ```
 sudo docker run -d --name ridets-nc -p 8080:8080 rastadidi/ridetnc-api:latest
