@@ -30,11 +30,11 @@ sudo docker ps
 
 # Usage
 
-- Swagger : http://localhost:8080/ridets?q=sport&page=1
+- Swagger : http://localhost:8080/
 - Get a given ridet : `http://localhost:8080/ridet/0426049`
-- Searh ridets : http://localhost:8080/ridets?q=sport&page=1
+- Search ridets : `http :8080/ridets q==sports page==1`
 
-## Call examples
+# Call examples
 
 Get infos about the **unique** society that has ridet `0426049` :
 
@@ -52,7 +52,7 @@ Get a list of societies and search with a matching keyword (send back society wh
 contains the query). Get the first page :
 
 ```
-http :8080/ridets?q=sport&page=1
+http :8080/ridets q==sports page==1
 ```
 
 # Developers section
