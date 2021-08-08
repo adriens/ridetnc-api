@@ -7,6 +7,10 @@
 
 The aim of this API is to make things easier than ever to get that datas.
 
+# Katacoda Playground
+
+You can give a try to this API thanks to this [dedicated KataCoda scenario](https://www.katacoda.com/rastadidi/courses/open-data/ridet-nc).
+
 # Related stuff
 
 - [New Caledonia Open Data Dataset](https://data.gouv.nc/explore/dataset/entreprises-actives-au-ridet/)
