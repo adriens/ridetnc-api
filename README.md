@@ -77,7 +77,7 @@ mvn compile jib:build
 
 ## TODO
 
-- [ ] Push to DockerHub
+- [x] Push to DockerHub
 - [ ] Write DEV.to demo Post
 - [ ] Post to contribs on OpenData Gouv.nc
 - [ ] Release with jreleaser
